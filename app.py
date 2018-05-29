@@ -18,7 +18,7 @@ def home():
 
 def rest_request_example():
     print (requests.get("http://ip.jsontest.com/").text)
-    print (requests.get("http://129.157.179.180:3000/shield/33/45/red/").text)
+    print (requests.get("http://129.157.179.180:3000/shield/33/45/red/droidperson").text)
 
 def read_db_SQL_example():
     conn = db.get_engine().connect()
