@@ -12,8 +12,9 @@ db = SQLAlchemy(app)
 # GET request to ip.jsontest.com
 def home():
     # My microservice!
-    return render_template('home.html')
     print (requests.get("http://129.157.179.180:3000/shield/33/45/red/droidperson").text)
+    return render_template('home.html')
+
 
 def rest_request_example():
     print (requests.get("http://ip.jsontest.com/").text)
