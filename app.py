@@ -13,7 +13,8 @@ db = SQLAlchemy(app)
 def home():
     # My microservice!
     for y in range(10)
-       print (requests.get("http://129.157.179.180:3000/shield/y/45/red/droidperson").text)
+	print (requests.get("http://129.157.179.180:3000/fighters/45/y/red/droidperson").text)
+    print (requests.get("http://129.157.179.180:3000/shield/y/45/red/droidperson").text)
     return render_template('home.html')
 
 
